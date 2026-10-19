@@ -49,6 +49,7 @@ const breadcrumbs = [
               description={article.data.description}
               href={`/blog/${article.data.slug}/`}
               meta={formatDate(article.data.publishDate)}
+              image={article.data.ogImage}
             />
           </li>
         ))}
