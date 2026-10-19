@@ -5,7 +5,6 @@ slug: "personal-brand-istruttrice-subacquea"
 hub: "insegna-con-cura"
 clusters:
   - "carriera-subacquea"
-  - "comunicazione"
   - "donne-nel-diving"
 series: "oltre-la-card"
 audience:
