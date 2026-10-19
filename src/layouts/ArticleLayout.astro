@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import TableOfContents from '../components/TableOfContents.astro';
@@ -10,7 +11,6 @@ import RelatedPosts from '../components/RelatedPosts.astro';
 import ShareLinks from '../components/ShareLinks.astro';
 import NewsletterCTA from '../components/NewsletterCTA.astro';
 import Comments from '../components/Comments.astro';
-import { getCollection, render } from 'astro:content';
 import { isPublishedArticle, readingTime } from '../lib/content';
 
 interface Props {
