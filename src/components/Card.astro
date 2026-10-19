@@ -7,12 +7,28 @@ interface Props {
   href: string;
   meta?: string;
   tags?: string[];
+  image?: string;
 }
 
-const { title, description, href, meta, tags = [] } = Astro.props;
+const { title, description, href, meta, tags = [], image } = Astro.props;
+
+// Copertina: se l'articolo ha una sua immagine, usa quella;
+// altrimenti usa il default. E se il file puntato non esiste ancora,
+// l'onerror qui sotto mostra comunque il default. Tripla sicurezza.
+const coverSrc = image && image.trim() !== '' ? image : '/images/og/default.jpg';
 ---
 
 <article class="card">
+  <div class="card-cover">
+    <img
+      src={coverSrc}
+      alt=""
+      loading="lazy"
+      decoding="async"
+      onerror="this.onerror=null;this.src='/images/og/default.jpg';"
+    />
+  </div>
+
   <h3 class="card-title">
     <a href={href}>{title}</a>
   </h3>
@@ -29,3 +45,19 @@ const { title, description, href, meta, tags = [] } = Astro.props;
     </div>
   )}
 </article>
+
+<style>
+  .card-cover {
+    margin-bottom: var(--space-4);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    background: var(--color-sand-100);
+  }
+
+  .card-cover img {
+    width: 100%;
+    aspect-ratio: 1200 / 630;
+    object-fit: cover;
+    display: block;
+  }
+</style>
