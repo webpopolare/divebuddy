@@ -10,7 +10,7 @@ import RelatedPosts from '../components/RelatedPosts.astro';
 import ShareLinks from '../components/ShareLinks.astro';
 import NewsletterCTA from '../components/NewsletterCTA.astro';
 import Comments from '../components/Comments.astro';
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import { isPublishedArticle, readingTime } from '../lib/content';
 
 interface Props {
@@ -20,7 +20,7 @@ interface Props {
 
 const { entry, related } = Astro.props;
 
-const { Content, headings } = await entry.render();
+const { Content, headings } = await render(entry);
 
 const hubs = await getCollection('hubs');
 const hub = hubs.find((item) => item.data.slug === entry.data.hub);
