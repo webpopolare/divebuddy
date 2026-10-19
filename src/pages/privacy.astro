@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Privacy' },
+];
+---
+
+<BaseLayout
+  title="Privacy | DiveBuddy"
+  description="Informativa privacy di DiveBuddy."
+  breadcrumbs={breadcrumbs}
+  noindex={true}
+>
+  <section class="container page-header">
+    <h1>Privacy Policy</h1>
+  </section>
+
+  <section class="container prose">
+    <p>
+      Qui inserisci la tua informativa privacy completa: titolare del trattamento,
+      finalità, dati raccolti, cookie, newsletter, commenti, analytics, diritti
+      dell’utente e contatti.
+    </p>
+  </section>
+</BaseLayout>

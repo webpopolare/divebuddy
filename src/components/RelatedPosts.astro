@@ -1,0 +1,28 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Card from './Card.astro';
+import { formatDate } from '../lib/content';
+
+interface Props {
+  articles: CollectionEntry<'articles'>[];
+}
+
+const { articles } = Astro.props;
+---
+
+{articles.length > 0 && (
+  <section class="related-posts" aria-label="Articoli correlati">
+    <h2>Continua a esplorare</h2>
+    <div class="grid">
+      {articles.map((article) => (
+        <Card
+          title={article.data.title}
+          description={article.data.description}
+          href={`/blog/${article.data.slug}/`}
+          meta={formatDate(article.data.publishDate)}
+          tags={article.data.tags}
+        />
+      ))}
+    </div>
+  </section>
+)}

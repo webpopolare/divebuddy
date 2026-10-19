@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const series = (await getCollection('series')).sort(
+  (a, b) => a.data.order - b.data.order
+);
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Serie' },
+];
+---
+
+<BaseLayout
+  title="Serie editoriali | DiveBuddy"
+  description="Percorsi guidati di articoli DiveBuddy per principianti, subacquee in crescita, viaggiatrici e istruttrici."
+  breadcrumbs={breadcrumbs}
+>
+  <section class="container page-header">
+    <h1>Serie editoriali</h1>
+    <p class="lead">
+      Percorsi progressivi per leggere DiveBuddy con metodo.
+    </p>
+  </section>
+
+  <section class="container section">
+    <div class="grid">
+      {series.map((item) => (
+        <Card
+          title={item.data.title}
+          description={item.data.description}
+          href={`/serie/${item.data.slug}/`}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

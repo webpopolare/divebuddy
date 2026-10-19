@@ -1,0 +1,29 @@
+---
+import HubLayout from '../../layouts/HubLayout.astro';
+import { getCollection } from 'astro:content';
+import { isPublishedArticle } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const hubs = await getCollection('hubs');
+
+  return hubs.map((hub) => ({
+    params: { slug: hub.data.slug },
+    props: { hub },
+  }));
+}
+
+const { hub } = Astro.props;
+
+const articles = (await getCollection('articles'))
+  .filter(
+    (article) =>
+      article.data.hub === hub.data.slug &&
+      isPublishedArticle(article)
+  )
+  .sort(
+    (a, b) =>
+      b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+  );
+---
+
+<HubLayout entry={hub} articles={articles} />

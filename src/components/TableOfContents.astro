@@ -1,0 +1,29 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+---
+
+{headings.length > 1 && (
+  <nav class="toc" aria-label="Indice dell’articolo">
+    <h2 class="toc-title">In questo articolo</h2>
+    <ul class="toc-list">
+      {headings.map((heading) => (
+        <li
+          class="toc-item"
+          style={`--toc-depth: ${heading.depth}`}
+        >
+          <a href={`#${heading.slug}`}>{heading.text}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}

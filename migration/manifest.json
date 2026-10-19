@@ -1,0 +1,789 @@
+[
+  {
+    "collection": "articles",
+    "slug": "primi-5-equipaggiamenti-subacquei",
+    "frontmatter": {
+      "title": "Primi 5 equipaggiamenti subacquei in cui investire",
+      "description": "Maschera, computer, DSMB, muta ed erogatore: la guida femminile per scegliere l'attrezzatura subacquea essenziale con consapevolezza.",
+      "slug": "primi-5-equipaggiamenti-subacquei",
+      "hub": "inizia-a-immergerti",
+      "clusters": ["attrezzatura-consapevole", "sicurezza-gentile"],
+      "series": "primi-respiri",
+      "audience": ["principiante", "open-water"],
+      "priority": "P1",
+      "publishDate": "2026-10-19",
+      "cta": "Raccontami qual è stato il tuo primo acquisto felice.",
+      "related": [
+        "come-scegliere-maschera-subacquea",
+        "dopo-open-water-5-consigli",
+        "attrezzatura-personale-5-motivi"
+      ],
+      "tags": ["attrezzatura subacquea", "principianti", "investimenti subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "come-scegliere-maschera-subacquea",
+    "frontmatter": {
+      "title": "Come scegliere la maschera subacquea: 7 criteri",
+      "description": "Vestibilità, lenti, volume, frame, gonnellino e cinghie: i 7 criteri per trovare la maschera subacquea giusta e immergerti senza fastidi.",
+      "slug": "come-scegliere-maschera-subacquea",
+      "hub": "inizia-a-immergerti",
+      "clusters": ["attrezzatura-consapevole"],
+      "series": "primi-respiri",
+      "audience": ["principiante", "open-water"],
+      "priority": "P1",
+      "publishDate": "2026-10-21",
+      "cta": "Raccontami quale maschera ti ha fatto sentire davvero a tuo agio.",
+      "related": [
+        "primi-5-equipaggiamenti-subacquei",
+        "attrezzatura-personale-5-motivi",
+        "kit-salvimmersione-save-a-dive"
+      ],
+      "tags": ["maschera subacquea", "vestibilità", "guida acquisto"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "dopo-open-water-5-consigli",
+    "frontmatter": {
+      "title": "Dopo l'Open Water: 5 consigli per crescere in subacquea",
+      "description": "Hai appena preso la certificazione? Ecco 5 consigli pratici per non fermarti, migliorare la tecnica e mantenere viva la passione per il mare.",
+      "slug": "dopo-open-water-5-consigli",
+      "hub": "inizia-a-immergerti",
+      "clusters": ["oltre-la-card", "sicurezza-gentile"],
+      "series": "primi-respiri",
+      "audience": ["open-water", "subacquea-in-crescita"],
+      "priority": "P1",
+      "publishDate": "2026-10-23",
+      "cta": "Ricordi la tua prima immersione dopo l'Open Water? Raccontamela.",
+      "related": [
+        "trovare-compagna-immersione",
+        "5-pilastri-subacquea",
+        "domande-istruttore-subacqueo-prima-del-corso"
+      ],
+      "tags": ["open water", "crescita subacquea", "consigli subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "trovare-compagna-immersione",
+    "frontmatter": {
+      "title": "Trovare una compagna di immersione: 5 modi concreti",
+      "description": "Cerchi una dive buddy? Scopri 5 modi per trovare una compagna di immersione affidabile, sicura e in sintonia con il tuo stile subacqueo.",
+      "slug": "trovare-compagna-immersione",
+      "hub": "community",
+      "clusters": ["donne-nel-diving", "sicurezza-gentile"],
+      "series": "primi-respiri",
+      "audience": ["principiante", "open-water", "subacquea-in-crescita"],
+      "priority": "P1",
+      "publishDate": "2026-10-26",
+      "cta": "Come hai trovato la tua dive buddy più affidabile?",
+      "related": [
+        "etichetta-subacquea-14-errori",
+        "dopo-open-water-5-consigli",
+        "donne-subacquee-ispirazionali"
+      ],
+      "tags": ["dive buddy", "community subacquea", "subacquea femminile"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "etichetta-subacquea-14-errori",
+    "frontmatter": {
+      "title": "Etichetta subacquea: 14 errori da evitare in immersione",
+      "description": "Puntualità, spazi in barca, briefing, rumore, bagno, attrezzature: piccoli gesti che possono rovinare un'immersione o renderla bellissima.",
+      "slug": "etichetta-subacquea-14-errori",
+      "hub": "community",
+      "clusters": ["etica-subacquea", "sicurezza-gentile"],
+      "series": "donne-nel-diving",
+      "audience": ["open-water", "subacquea-in-crescita", "viaggiatrice-subacquea"],
+      "priority": "P1",
+      "publishDate": "2026-10-28",
+      "cta": "Quale errore di etichetta hai visto più spesso a bordo?",
+      "related": [
+        "trovare-compagna-immersione",
+        "sicurezza-in-superficie-subacquea",
+        "segnalatori-acustici-silenzio-sottacqua"
+      ],
+      "tags": ["etichetta subacquea", "rispetto sott'acqua", "cultura subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "sicurezza-in-superficie-subacquea",
+    "frontmatter": {
+      "title": "Sicurezza in superficie: 6 abitudini che contano",
+      "description": "La superficie non è una formalità. Gonfiare il BCD, rendersi visibili, udibili e preparare il piano: sei regole per tornare a bordo sicure.",
+      "slug": "sicurezza-in-superficie-subacquea",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["sicurezza-gentile"],
+      "series": "respiro-e-tecnica",
+      "audience": ["open-water", "subacquea-in-crescita"],
+      "priority": "P1",
+      "publishDate": "2026-10-30",
+      "cta": "Quante volte hai dato per scontata la superficie?",
+      "related": [
+        "etichetta-subacquea-14-errori",
+        "segnalatori-acustici-silenzio-sottacqua",
+        "kit-salvimmersione-save-a-dive"
+      ],
+      "tags": ["sicurezza superficie", "BCD", "subacquea sicura"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "scegliere-diving-giusto-vacanza-subacquea",
+    "frontmatter": {
+      "title": "Scegliere il diving giusto: 5 passi per la vacanza subacquea",
+      "description": "Guida pratica e ispirazionale per scegliere un centro immersioni sicuro, adatto a te, anche in una destinazione che non conosci.",
+      "slug": "scegliere-diving-giusto-vacanza-subacquea",
+      "hub": "viaggia-in-sicurezza",
+      "clusters": ["viaggiare-blu", "sicurezza-gentile"],
+      "series": "viaggiare-blu",
+      "audience": ["viaggiatrice-subacquea", "subacquea-in-crescita"],
+      "priority": "P1",
+      "publishDate": "2026-11-02",
+      "cta": "Qual è stata la domanda che ti ha fatto capire di aver scelto il diving giusto?",
+      "related": [
+        "shore-diving-7-accortezze",
+        "guida-subacquea-privata-quando-scegliere",
+        "assicurazione-viaggio-subacqueo"
+      ],
+      "tags": ["scegliere diving", "vacanza subacquea", "viaggi subacquei"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "domande-istruttore-subacqueo-prima-del-corso",
+    "frontmatter": {
+      "title": "5 domande all'istruttore subacqueo prima di pagare",
+      "description": "Scegli il corso con consapevolezza: cinque domande per valutare esperienza, metodo, gruppo, attrezzatura e passione di chi ti insegnerà.",
+      "slug": "domande-istruttore-subacqueo-prima-del-corso",
+      "hub": "inizia-a-immergerti",
+      "clusters": ["oltre-la-card", "sicurezza-gentile"],
+      "series": "primi-respiri",
+      "audience": ["principiante", "open-water"],
+      "priority": "P1",
+      "publishDate": "2026-11-04",
+      "cta": "Quali domande hai fatto prima di iniziare il tuo corso subacqueo?",
+      "related": [
+        "certificazione-subacquea-perche-importa",
+        "e-learning-manuale-teoria-corso-subacqueo",
+        "dopo-open-water-5-consigli"
+      ],
+      "tags": ["istruttore subacqueo", "corso subacquea", "formazione subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "certificazione-subacquea-perche-importa",
+    "frontmatter": {
+      "title": "Certificazione subacquea: perché non è solo una card",
+      "description": "Perché nella subacquea serve una certificazione? Rischi invisibili, standard, sicurezza e cultura subacquea spiegati con voce femminile.",
+      "slug": "certificazione-subacquea-perche-importa",
+      "hub": "inizia-a-immergerti",
+      "clusters": ["sicurezza-gentile", "oltre-la-card"],
+      "series": "primi-respiri",
+      "audience": ["principiante", "open-water"],
+      "priority": "P2",
+      "publishDate": "2026-11-06",
+      "cta": "Tu che rapporto hai con la certificazione subacquea?",
+      "related": [
+        "domande-istruttore-subacqueo-prima-del-corso",
+        "dopo-open-water-5-consigli",
+        "scala-corsi-subacquei"
+      ],
+      "tags": ["certificazione subacquea", "standard subacquea", "sicurezza"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "5-pilastri-subacquea",
+    "frontmatter": {
+      "title": "5 pilastri della subacquea per immersioni più consapevoli",
+      "description": "Galleggiabilità, respirazione, trim, propulsione e organizzazione: i cinque pilastri per migliorare come subacquea senza inseguire record.",
+      "slug": "5-pilastri-subacquea",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["respiro-e-tecnica", "sicurezza-gentile", "oltre-la-card"],
+      "series": "respiro-e-tecnica",
+      "audience": ["open-water", "subacquea-in-crescita"],
+      "priority": "P1",
+      "publishDate": "2026-11-09",
+      "cta": "Quale dei cinque pilastri senti più debole in questo momento?",
+      "related": [
+        "respirare-meglio-sottacqua-5-abitudini",
+        "sac-rate-consumo-aria-subacquea",
+        "peso-giusto-weight-check-subacquea"
+      ],
+      "tags": ["pilastri subacquea", "galleggiabilità", "tecnica subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "respirare-meglio-sottacqua-5-abitudini",
+    "frontmatter": {
+      "title": "Respirare meglio sott'acqua: 5 abitudini per durare di più",
+      "description": "Meno drag, più trim, respiro regolare e gestione del BCD: cinque abitudini per ridurre il consumo d'aria e goderti immersioni più lunghe.",
+      "slug": "respirare-meglio-sottacqua-5-abitudini",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["respiro-e-tecnica"],
+      "series": "respiro-e-tecnica",
+      "audience": ["subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-11-11",
+      "cta": "Cosa hai scoperto del tuo respiro sott'acqua?",
+      "related": [
+        "5-pilastri-subacquea",
+        "sac-rate-consumo-aria-subacquea",
+        "peso-giusto-weight-check-subacquea"
+      ],
+      "tags": ["respirazione subacquea", "consumo aria", "efficienza subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "sac-rate-consumo-aria-subacquea",
+    "frontmatter": {
+      "title": "SAC rate: come leggere il consumo d'aria in subacquea",
+      "description": "Cos'è il SAC rate, come si calcola e perché monitorare il respiro sott'acqua ti aiuta a diventare più efficiente, calma e consapevole.",
+      "slug": "sac-rate-consumo-aria-subacquea",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["respiro-e-tecnica"],
+      "series": "respiro-e-tecnica",
+      "audience": ["subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-11-13",
+      "cta": "Hai mai monitorato il tuo consumo d'aria?",
+      "related": [
+        "respirare-meglio-sottacqua-5-abitudini",
+        "5-pilastri-subacquea",
+        "nitrox-guida-consapevole"
+      ],
+      "tags": ["SAC rate", "consumo aria", "respiro subacqueo"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "peso-giusto-weight-check-subacquea",
+    "frontmatter": {
+      "title": "Peso giusto in subacquea: il weight check che cambia tutto",
+      "description": "Troppi piombi rovinano galleggiabilità e consumi. Ecco come capire se sei sovraccarica e trovare il peso ideale con il weight check finale.",
+      "slug": "peso-giusto-weight-check-subacquea",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["respiro-e-tecnica", "sicurezza-gentile"],
+      "series": "respiro-e-tecnica",
+      "audience": ["open-water", "subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-11-16",
+      "cta": "Hai mai fatto un weight check a fine immersione?",
+      "related": [
+        "5-pilastri-subacquea",
+        "respirare-meglio-sottacqua-5-abitudini",
+        "kit-salvimmersione-save-a-dive"
+      ],
+      "tags": ["weight check", "piombi subacquea", "galleggiabilità"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "nitrox-guida-consapevole",
+    "frontmatter": {
+      "title": "Nitrox: guida consapevole a miti, usi e sicurezza",
+      "description": "Il nitrox non è per élite: scopri cos'è, quali miti sfatare e in quali situazioni l'aria arricchita può aumentare margine e piacere in immersione.",
+      "slug": "nitrox-guida-consapevole",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["respiro-e-tecnica", "oltre-la-card"],
+      "series": "respiro-e-tecnica",
+      "audience": ["open-water", "subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-11-18",
+      "cta": "Hai già la certificazione nitrox? L'hai trovata utile o intimidatoria?",
+      "related": [
+        "sac-rate-consumo-aria-subacquea",
+        "scala-corsi-subacquei",
+        "technical-diving-5-segnali-pronta"
+      ],
+      "tags": ["nitrox", "aria arricchita", "formazione subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "kit-salvimmersione-save-a-dive",
+    "frontmatter": {
+      "title": "Kit salvimmersione: cosa portare per non rinunciare",
+      "description": "O-ring, fascette, utensili, batterie, ricambi personali: come costruire un save-a-dive kit essenziale, ordinato e adatto al tuo modo di immergerti.",
+      "slug": "kit-salvimmersione-save-a-dive",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["attrezzatura-consapevole", "sicurezza-gentile"],
+      "series": "respiro-e-tecnica",
+      "audience": ["open-water", "subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-11-20",
+      "cta": "Qual è l'oggetto del tuo kit che ti ha salvato un'immersione?",
+      "related": [
+        "primi-5-equipaggiamenti-subacquei",
+        "peso-giusto-weight-check-subacquea",
+        "sicurezza-in-superficie-subacquea"
+      ],
+      "tags": ["kit salvimmersione", "save a dive kit", "attrezzatura subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "attrezzatura-personale-5-motivi",
+    "frontmatter": {
+      "title": "Attrezzatura subacquea personale: 5 motivi per comprarla",
+      "description": "Convenienza, familiarità, vestibilità, funzionalità e igiene: perché investire nella propria attrezzatura subacquea migliora ogni immersione.",
+      "slug": "attrezzatura-personale-5-motivi",
+      "hub": "inizia-a-immergerti",
+      "clusters": ["attrezzatura-consapevole"],
+      "series": "primi-respiri",
+      "audience": ["open-water", "subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-11-23",
+      "cta": "Qual è stato il primo pezzo di attrezzatura che hai comprato?",
+      "related": [
+        "primi-5-equipaggiamenti-subacquei",
+        "come-scegliere-maschera-subacquea",
+        "kit-salvimmersione-save-a-dive"
+      ],
+      "tags": ["attrezzatura personale", "noleggio subacquea", "investimento subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "e-learning-manuale-teoria-corso-subacqueo",
+    "frontmatter": {
+      "title": "E-learning o manuale? Studiare la teoria subacquea",
+      "description": "Come scegliere il formato di studio, arrivare preparata in classe e trasformare la teoria del corso subacqueo in fiducia sott'acqua.",
+      "slug": "e-learning-manuale-teoria-corso-subacqueo",
+      "hub": "inizia-a-immergerti",
+      "clusters": ["oltre-la-card"],
+      "series": "primi-respiri",
+      "audience": ["principiante", "open-water"],
+      "priority": "P2",
+      "publishDate": "2026-11-25",
+      "cta": "Tu hai scelto e-learning o manuale per il tuo corso?",
+      "related": [
+        "domande-istruttore-subacqueo-prima-del-corso",
+        "certificazione-subacquea-perche-importa",
+        "dopo-open-water-5-consigli"
+      ],
+      "tags": ["e-learning subacqueo", "teoria subacquea", "corso open water"]
+    }
+  },
+  {
+    "collection": "resources",
+    "slug": "checklist-pre-immersione",
+    "frontmatter": {
+      "title": "Checklist pre-immersione DiveBuddy",
+      "description": "Una checklist essenziale per preparare attrezzatura, piano di immersione, sicurezza in superficie e comunicazione con il buddy prima di entrare in acqua.",
+      "slug": "checklist-pre-immersione",
+      "type": "checklist",
+      "audience": ["principiante", "open-water", "subacquea-in-crescita"],
+      "publishDate": "2026-11-27",
+      "relatedArticles": [
+        "sicurezza-in-superficie-subacquea",
+        "kit-salvimmersione-save-a-dive",
+        "etichetta-subacquea-14-errori"
+      ]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "scala-corsi-subacquei",
+    "frontmatter": {
+      "title": "Scala corsi subacquei: Open Water, Advanced, Rescue",
+      "description": "Guida alla progressione formativa subacquea: cosa insegnano i corsi e quando ha davvero senso passare al livello successivo senza fretta.",
+      "slug": "scala-corsi-subacquei",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["oltre-la-card"],
+      "series": "oltre-la-card",
+      "audience": ["open-water", "subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-11-30",
+      "cta": "Tu a che punto della scala sei?",
+      "related": [
+        "corsi-specialty-subacquei-come-scegliere",
+        "nitrox-guida-consapevole",
+        "certificazione-subacquea-perche-importa"
+      ],
+      "tags": ["scala corsi", "advanced open water", "rescue diver"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "corsi-specialty-subacquei-come-scegliere",
+    "frontmatter": {
+      "title": "Corsi specialty subacquei: 3 domande per scegliere bene",
+      "description": "Non collezionare card a caso. Tre domande per capire quali corsi specialty subacquei aggiungono valore reale alla tua sicurezza e crescita.",
+      "slug": "corsi-specialty-subacquei-come-scegliere",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["oltre-la-card"],
+      "series": "oltre-la-card",
+      "audience": ["subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-12-02",
+      "cta": "Quale corso specialty hai trovato più utile?",
+      "related": [
+        "scala-corsi-subacquei",
+        "nitrox-guida-consapevole",
+        "technical-diving-5-segnali-pronta"
+      ],
+      "tags": ["corsi specialty", "certificazioni subacquee", "formazione subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "segnalatori-acustici-silenzio-sottacqua",
+    "frontmatter": {
+      "title": "Segnalatori acustici subacquei: usare il suono con rispetto",
+      "description": "Tank banger, fischietto, SMB: quando un segnale acustico serve davvero e quando disturba il gruppo, la guida e il silenzio del mare.",
+      "slug": "segnalatori-acustici-silenzio-sottacqua",
+      "hub": "community",
+      "clusters": ["etica-subacquea", "sicurezza-gentile"],
+      "series": "donne-nel-diving",
+      "audience": ["open-water", "subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-12-04",
+      "cta": "Quale segnalatore acustico usi sott'acqua?",
+      "related": [
+        "etichetta-subacquea-14-errori",
+        "sicurezza-in-superficie-subacquea",
+        "trovare-compagna-immersione"
+      ],
+      "tags": ["segnalatori acustici", "comunicazione subacquea", "silenzio sott'acqua"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "shore-diving-7-accortezze",
+    "frontmatter": {
+      "title": "Shore diving: 7 accortezze per immergersi dalla riva",
+      "description": "Libertà, autonomia e sicurezza: guida alle immersioni dalla riva, tra entry point, uscita, pinne, navigazione, oggetti personali e regole locali.",
+      "slug": "shore-diving-7-accortezze",
+      "hub": "viaggia-in-sicurezza",
+      "clusters": ["viaggiare-blu", "sicurezza-gentile"],
+      "series": "viaggiare-blu",
+      "audience": ["viaggiatrice-subacquea", "subacquea-in-crescita"],
+      "priority": "P2",
+      "publishDate": "2026-12-07",
+      "cta": "Hai mai provato un'immersione dalla riva?",
+      "related": [
+        "scegliere-diving-giusto-vacanza-subacquea",
+        "guida-subacquea-privata-quando-scegliere",
+        "sicurezza-in-superficie-subacquea"
+      ],
+      "tags": ["shore diving", "immersioni dalla riva", "subacquea indipendente"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "guida-subacquea-privata-quando-scegliere",
+    "frontmatter": {
+      "title": "Guida subacquea privata: quando sceglierla davvero",
+      "description": "Non è un lusso né una debolezza. La guida privata può migliorare sicurezza, fotografia, apprendimento e piacere in molte immersioni.",
+      "slug": "guida-subacquea-privata-quando-scegliere",
+      "hub": "viaggia-in-sicurezza",
+      "clusters": ["viaggiare-blu"],
+      "series": "viaggiare-blu",
+      "audience": ["open-water", "subacquea-in-crescita", "viaggiatrice-subacquea"],
+      "priority": "P2",
+      "publishDate": "2026-12-09",
+      "cta": "Hai mai assunto una guida subacquea privata?",
+      "related": [
+        "scegliere-diving-giusto-vacanza-subacquea",
+        "shore-diving-7-accortezze",
+        "trovare-compagna-immersione"
+      ],
+      "tags": ["guida privata", "private dive guide", "viaggi subacquei"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "assicurazione-viaggio-subacqueo",
+    "frontmatter": {
+      "title": "Assicurazione di viaggio per subacquei: cosa sapere",
+      "description": "Bagaglio, attrezzatura sportiva, ritardi e destinazioni remote: perché assicurare un viaggio subacqueo protegge esperienza, budget e serenità.",
+      "slug": "assicurazione-viaggio-subacqueo",
+      "hub": "viaggia-in-sicurezza",
+      "clusters": ["viaggiare-blu", "sicurezza-gentile"],
+      "series": "viaggiare-blu",
+      "audience": ["viaggiatrice-subacquea"],
+      "priority": "P2",
+      "publishDate": "2026-12-11",
+      "cta": "Ti è mai capitato un imprevisto durante un viaggio subacqueo?",
+      "related": [
+        "scegliere-diving-giusto-vacanza-subacquea",
+        "attrezzatura-personale-5-motivi",
+        "shore-diving-7-accortezze"
+      ],
+      "tags": ["assicurazione viaggio", "attrezzatura sportiva", "viaggi subacquei"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "donne-subacquee-ispirazionali",
+    "frontmatter": {
+      "title": "5 donne subacquee che ispirano il diving",
+      "description": "Leslie Roche, Vanessa, Amanda Cotton, Maria Pinto e Margo Payton: voci femminili tra conservazione, immagine, scienza e educazione marina.",
+      "slug": "donne-subacquee-ispirazionali",
+      "hub": "community",
+      "clusters": ["donne-nel-diving"],
+      "series": "donne-nel-diving",
+      "audience": ["principiante", "open-water", "subacquea-in-crescita", "aspirante-istruttrice"],
+      "priority": "P2",
+      "publishDate": "2026-12-14",
+      "cta": "Qual è la donna subacquea che ti ha ispirata di più?",
+      "related": [
+        "donne-subacquee-lezioni-community",
+        "trovare-compagna-immersione",
+        "etichetta-subacquea-14-errori"
+      ],
+      "tags": ["donne subacquee", "women's dive day", "ispirazione subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "donne-subacquee-lezioni-community",
+    "frontmatter": {
+      "title": "Donne nel diving: 5 lezioni per non sentirsi sole",
+      "description": "Coraggio, cura, bellezza, scienza e meraviglia: cosa ci insegnano le donne subacquee e perché costruire rete femminile nel diving conta.",
+      "slug": "donne-subacquee-lezioni-community",
+      "hub": "community",
+      "clusters": ["donne-nel-diving", "etica-subacquea"],
+      "series": "donne-nel-diving",
+      "audience": ["open-water", "subacquea-in-crescita", "istruttrice-junior"],
+      "priority": "P2",
+      "publishDate": "2026-12-16",
+      "cta": "Conosvi altre donne subacquee che meritano più visibilità?",
+      "related": [
+        "donne-subacquee-ispirazionali",
+        "trovare-compagna-immersione",
+        "segnalatori-acustici-silenzio-sottacqua"
+      ],
+      "tags": ["donne nel diving", "community subacquea", "rete femminile"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "mance-subacquee-guida-consapevole",
+    "frontmatter": {
+      "title": "Mance subacquee: come ringraziare guide ed equipaggio",
+      "description": "Quanto dare, a chi e come: una guida serena alle gratuity nel diving, per riconoscere il lavoro di divemaster, capitani e crew senza ansia.",
+      "slug": "mance-subacquee-guida-consapevole",
+      "hub": "viaggia-in-sicurezza",
+      "clusters": ["etica-subacquea", "viaggiare-blu"],
+      "series": "viaggiare-blu",
+      "audience": ["viaggiatrice-subacquea", "subacquea-in-crescita"],
+      "priority": "P3",
+      "publishDate": "2026-12-18",
+      "cta": "Tu come ti regoli con le mance in subacquea?",
+      "related": [
+        "scegliere-diving-giusto-vacanza-subacquea",
+        "shore-diving-7-accortezze",
+        "etichetta-subacquea-14-errori"
+      ],
+      "tags": ["mance subacquee", "divemaster", "equipaggio barca"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "mal-di-mare-in-barca-immersioni",
+    "frontmatter": {
+      "title": "Mal di mare in barca: proteggere la tua immersione",
+      "description": "Nausea, movimento, respiro e gestione a bordo: consigli pratici per non farti rovinare la giornata subacquea dal mal di mare.",
+      "slug": "mal-di-mare-in-barca-immersioni",
+      "hub": "viaggia-in-sicurezza",
+      "clusters": ["sicurezza-gentile", "viaggiare-blu"],
+      "series": "viaggiare-blu",
+      "audience": ["principiante", "viaggiatrice-subacquea"],
+      "priority": "P3",
+      "publishDate": "2026-12-21",
+      "cta": "Come gestisci il mal di mare durante le immersioni?",
+      "related": [
+        "sicurezza-in-superficie-subacquea",
+        "assicurazione-viaggio-subacqueo",
+        "scegliere-diving-giusto-vacanza-subacquea"
+      ],
+      "tags": ["mal di mare", "nausea in barca", "benessere subacqueo"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "technical-diving-5-segnali-pronta",
+    "frontmatter": {
+      "title": "Technical diving: 5 segnali che sei pronta a iniziare",
+      "description": "Il subacqueo tecnico non è più bravo: è più responsabile. Cinque segnali per capire se sei pronta al technical diving con basi solide.",
+      "slug": "technical-diving-5-segnali-pronta",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["respiro-e-tecnica", "oltre-la-card"],
+      "series": "oltre-la-card",
+      "audience": ["subacquea-in-crescita", "istruttrice-junior"],
+      "priority": "P3",
+      "publishDate": "2026-12-23",
+      "cta": "Ti riconosci in questi segnali?",
+      "related": [
+        "5-pilastri-subacquea",
+        "nitrox-guida-consapevole",
+        "technical-diving-miti-da-sfatare"
+      ],
+      "tags": ["technical diving", "subacquea tecnica", "formazione avanzata"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "technical-diving-miti-da-sfatare",
+    "frontmatter": {
+      "title": "Technical diving e relitti: 3 miti da sfatare",
+      "description": "Tech non è commercial, relitto ricreativo non è penetration: chiarimenti essenziali per scegliere il percorso subacqueo senza confusioni.",
+      "slug": "technical-diving-miti-da-sfatare",
+      "hub": "migliora-la-tua-subacquea",
+      "clusters": ["respiro-e-tecnica", "oltre-la-card"],
+      "series": "oltre-la-card",
+      "audience": ["subacquea-in-crescita"],
+      "priority": "P3",
+      "publishDate": "2026-12-26",
+      "cta": "Che rapporto hai con il technical diving?",
+      "related": [
+        "technical-diving-5-segnali-pronta",
+        "scala-corsi-subacquei",
+        "corsi-specialty-subacquei-come-scegliere"
+      ],
+      "tags": ["technical diving miti", "wreck diving", "commercial diving"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "dopo-ie-imparare-a-insegnare-subacquea",
+    "frontmatter": {
+      "title": "Dopo l'IE: imparare davvero a insegnare subacquea",
+      "description": "La certificazione da istruttrice è un inizio. Come sviluppare didattica, relazione, sicurezza psicologica e stile professionale.",
+      "slug": "dopo-ie-imparare-a-insegnare-subacquea",
+      "hub": "insegna-con-cura",
+      "clusters": ["didattica", "oltre-la-card"],
+      "series": "oltre-la-card",
+      "audience": ["aspirante-istruttrice", "istruttrice-junior"],
+      "priority": "P2",
+      "publishDate": "2026-12-28",
+      "cta": "Se hai appena terminato l'IE, qual è la paura più grande che senti?",
+      "related": [
+        "errori-nuove-istruttrici-subacquee-parte-1",
+        "errori-invisibili-nuova-istruttrice-parte-2",
+        "formazione-continua-istruttrice-subacquea"
+      ],
+      "tags": ["dopo IE", "istruttrice subacquea", "insegnare subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "errori-nuove-istruttrici-subacquee-parte-1",
+    "frontmatter": {
+      "title": "Nuove istruttrici subacquee: 6 errori da evitare",
+      "description": "Standard, ripetizioni, ansia delle studentesse e correzioni: sei errori comuni delle nuove istruttrici, letti con cura e responsabilità.",
+      "slug": "errori-nuove-istruttrici-subacquee-parte-1",
+      "hub": "insegna-con-cura",
+      "clusters": ["didattica"],
+      "series": "oltre-la-card",
+      "audience": ["aspirante-istruttrice", "istruttrice-junior"],
+      "priority": "P2",
+      "publishDate": "2026-12-30",
+      "cta": "Quale di questi errori senti più vicino?",
+      "related": [
+        "dopo-ie-imparare-a-insegnare-subacquea",
+        "errori-invisibili-nuova-istruttrice-parte-2",
+        "etichetta-subacquea-14-errori"
+      ],
+      "tags": ["errori istruttrici", "didattica subacquea", "formazione subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "errori-invisibili-nuova-istruttrice-parte-2",
+    "frontmatter": {
+      "title": "Errori invisibili della nuova istruttrice: parte 2",
+      "description": "Autorità, ascolto, paura, divertimento: gli errori relazionali che non stanno nei manuali ma decidono la qualità di un corso subacqueo.",
+      "slug": "errori-invisibili-nuova-istruttrice-parte-2",
+      "hub": "insegna-con-cura",
+      "clusters": ["didattica", "etica-subacquea"],
+      "series": "oltre-la-card",
+      "audience": ["aspirante-istruttrice", "istruttrice-junior"],
+      "priority": "P2",
+      "publishDate": "2026-12-31",
+      "cta": "Qual è l'errore invisibile che hai commesso o osservato più spesso?",
+      "related": [
+        "errori-nuove-istruttrici-subacquee-parte-1",
+        "dopo-ie-imparare-a-insegnare-subacquea",
+        "segnalatori-acustici-silenzio-sottacqua"
+      ],
+      "tags": ["relazione educativa", "comunicazione subacquea", "istruttrice subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "formazione-continua-istruttrice-subacquea",
+    "frontmatter": {
+      "title": "Formazione continua per istruttrici subacquee",
+      "description": "Risk management, aggiornamento e umiltà professionale: perché continuare a studiare protegge te, le tue studentesse e la tua carriera.",
+      "slug": "formazione-continua-istruttrice-subacquea",
+      "hub": "insegna-con-cura",
+      "clusters": ["didattica", "carriera-subacquea"],
+      "series": "oltre-la-card",
+      "audience": ["istruttrice-junior", "istruttrice-esperta"],
+      "priority": "P2",
+      "publishDate": "2027-01-04",
+      "cta": "Hai mai seguito un corso che ti ha fatto cambiare modo di insegnare?",
+      "related": [
+        "dopo-ie-imparare-a-insegnare-subacquea",
+        "cv-istruttrice-subacquea-errori",
+        "personal-brand-istruttrice-subacquea"
+      ],
+      "tags": ["formazione continua", "risk management", "carriera subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "cv-istruttrice-subacquea-errori",
+    "frontmatter": {
+      "title": "CV da istruttrice subacquea: 5 errori da evitare",
+      "description": "Vuoi lavorare nel diving? Evita candidature generiche, foto sbagliate e dati inutili. Come presentare competenze e valore professionale.",
+      "slug": "cv-istruttrice-subacquea-errori",
+      "hub": "insegna-con-cura",
+      "clusters": ["carriera-subacquea"],
+      "series": "oltre-la-card",
+      "audience": ["aspirante-istruttrice", "istruttrice-junior"],
+      "priority": "P3",
+      "publishDate": "2027-01-06",
+      "cta": "Stai pensando a un lavoro nel diving?",
+      "related": [
+        "formazione-continua-istruttrice-subacquea",
+        "personal-brand-istruttrice-subacquea",
+        "domande-istruttore-subacqueo-prima-del-corso"
+      ],
+      "tags": ["CV subacqueo", "lavoro nel diving", "istruttrice subacquea"]
+    }
+  },
+  {
+    "collection": "articles",
+    "slug": "personal-brand-istruttrice-subacquea",
+    "frontmatter": {
+      "title": "Personal brand per istruttrici subacquee",
+      "description": "Il tuo nome sott'acqua conta più di una card. Costruire fiducia, identità e reputazione professionale senza svendersi né improvvisare.",
+      "slug": "personal-brand-istruttrice-subacquea",
+      "hub": "insegna-con-cura",
+      "clusters": ["carriera-subacquea"],
+      "series": "oltre-la-card",
+      "audience": ["istruttrice-junior", "istruttrice-esperta"],
+      "priority": "P3",
+      "publishDate": "2027-01-08",
+      "cta": "Ti senti visibile e riconosciuta per il tuo valore professionale?",
+      "related": [
+        "cv-istruttrice-subacquea-errori",
+        "formazione-continua-istruttrice-subacquea",
+        "donne-subacquee-lezioni-community"
+      ],
+      "tags": ["personal brand", "comunicazione professionale", "carriera subacquea"]
+    }
+  }
+]

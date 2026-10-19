@@ -1,0 +1,38 @@
+---
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  seriesTitle: string;
+  seriesHref: string;
+  prev?: CollectionEntry<'articles'> | null;
+  next?: CollectionEntry<'articles'> | null;
+}
+
+const { seriesTitle, seriesHref, prev, next } = Astro.props;
+---
+
+{(prev || next) && (
+  <nav class="series-navigation" aria-label="Navigazione serie">
+    <p class="series-label">
+      Serie: <a href={seriesHref}>{seriesTitle}</a>
+    </p>
+
+    <div class="series-links">
+      {prev ? (
+        <a href={`/blog/${prev.data.slug}/`} class="series-prev">
+          ← {prev.data.title}
+        </a>
+      ) : (
+        <span />
+      )}
+
+      {next ? (
+        <a href={`/blog/${next.data.slug}/`} class="series-next">
+          {next.data.title} →
+        </a>
+      ) : (
+        <span />
+      )}
+    </div>
+  </nav>
+)}

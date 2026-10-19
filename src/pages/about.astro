@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'About' },
+];
+---
+
+<BaseLayout
+  title="About | DiveBuddy"
+  description="Chi è DiveBuddy, perché esiste e quale promessa editoriale mantiene."
+  breadcrumbs={breadcrumbs}
+>
+  <section class="container page-header">
+    <h1>About DiveBuddy</h1>
+    <p class="lead">
+      DiveBuddy è il blog subacqueo con voce femminile che accompagna la lettrice
+      dal primo respiro sott’acqua alla responsabilità di insegnarlo.
+    </p>
+  </section>
+
+  <section class="container prose">
+    <h2>Perché esiste</h2>
+    <p>
+      Perché la subacquea ha bisogno di informazioni chiare, concrete, rispettose
+      e non giudicanti. Perché molte subacquee iniziano con entusiasmo ma poi si
+      sentono sole, confuse o intimidite da un linguaggio troppo tecnico o troppo
+      competitivo.
+    </p>
+
+    <h2>A chi si rivolge</h2>
+    <ul>
+      <li>principianti e neocertificate Open Water;</li>
+      <li>subacquee in crescita tecnica;</li>
+      <li>viaggiatrici subacquee;</li>
+      <li>aspiranti istruttrici;</li>
+      <li>istruttrici junior e professioniste del diving.</li>
+    </ul>
+
+    <h2>Come lavoriamo</h2>
+    <p>
+      DiveBuddy unisce voce editoriale femminile, rigore tecnico e attenzione alla
+      sicurezza gentile. Non sostituisce la formazione ufficiale, ma la supporta
+      con contesto, pratica e cultura subacquea.
+    </p>
+  </section>
+</BaseLayout>

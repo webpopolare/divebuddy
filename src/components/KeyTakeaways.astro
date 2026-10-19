@@ -1,0 +1,14 @@
+---
+interface Props {
+  description: string;
+  cta?: string;
+}
+
+const { description, cta } = Astro.props;
+---
+
+<section class="key-takeaways" aria-label="In breve">
+  <h2>In breve</h2>
+  <p>{description}</p>
+  {cta && <p class="key-cta">{cta}</p>}
+</section>

@@ -1,0 +1,59 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Card from '../components/Card.astro';
+import { formatDate } from '../lib/content';
+
+interface Props {
+  entry: CollectionEntry<'series'>;
+  articles: CollectionEntry<'articles'>[];
+}
+
+const { entry, articles } = Astro.props;
+const { Content } = await entry.render();
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Serie', href: '/serie/' },
+  { text: entry.data.title },
+];
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  breadcrumbs={breadcrumbs}
+  schemaType="WebPage"
+>
+  <section class="series-hero container">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>{entry.data.title}</h1>
+    <p class="lead">{entry.data.intro}</p>
+  </section>
+
+  <div class="container prose">
+    <Content />
+  </div>
+
+  <section class="container series-articles">
+    <h2>Percorso della serie</h2>
+
+    {articles.length > 0 ? (
+      <ol class="series-list">
+        {articles.map((article, index) => (
+          <li>
+            <Card
+              title={`${index + 1}. ${article.data.title}`}
+              description={article.data.description}
+              href={`/blog/${article.data.slug}/`}
+              meta={formatDate(article.data.publishDate)}
+            />
+          </li>
+        ))}
+      </ol>
+    ) : (
+      <p>Non ci sono ancora articoli pubblicati in questa serie.</p>
+    )}
+  </section>
+</BaseLayout>

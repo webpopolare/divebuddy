@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Cookie' },
+];
+---
+
+<BaseLayout
+  title="Cookie | DiveBuddy"
+  description="Cookie policy di DiveBuddy."
+  breadcrumbs={breadcrumbs}
+  noindex={true}
+>
+  <section class="container page-header">
+    <h1>Cookie Policy</h1>
+  </section>
+
+  <section class="container prose">
+    <p>
+      Qui descrivi i cookie tecnici, analitici, di terze parti, eventuali banner
+      e modalità di gestione del consenso.
+    </p>
+  </section>
+</BaseLayout>

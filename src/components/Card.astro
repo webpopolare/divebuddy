@@ -1,0 +1,31 @@
+---
+import TagPill from './TagPill.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  href: string;
+  meta?: string;
+  tags?: string[];
+}
+
+const { title, description, href, meta, tags = [] } = Astro.props;
+---
+
+<article class="card">
+  <h3 class="card-title">
+    <a href={href}>{title}</a>
+  </h3>
+
+  <p class="card-description">{description}</p>
+
+  {meta && <p class="card-meta">{meta}</p>}
+
+  {tags.length > 0 && (
+    <div class="card-tags">
+      {tags.slice(0, 3).map((tag) => (
+        <TagPill label={tag} />
+      ))}
+    </div>
+  )}
+</article>

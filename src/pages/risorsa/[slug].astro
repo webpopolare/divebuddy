@@ -1,0 +1,17 @@
+---
+import ResourceLayout from '../../layouts/ResourceLayout.astro';
+import { getPublishedResources } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const resources = await getPublishedResources();
+
+  return resources.map((resource) => ({
+    params: { slug: resource.data.slug },
+    props: { resource },
+  }));
+}
+
+const { resource } = Astro.props;
+---
+
+<ResourceLayout entry={resource} />

@@ -1,0 +1,128 @@
+---
+interface Crumb {
+  text: string;
+  href?: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  type?: 'website' | 'article';
+  publishedTime?: string;
+  modifiedTime?: string;
+  author?: string;
+  noindex?: boolean;
+  breadcrumbs?: Crumb[];
+  schemaType?: 'WebPage' | 'BlogPosting';
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogImage,
+  type = 'website',
+  publishedTime,
+  modifiedTime,
+  author = 'DiveBuddy',
+  noindex = false,
+  breadcrumbs = [],
+  schemaType = 'WebPage',
+} = Astro.props;
+
+const site = Astro.site ?? new URL('http://localhost:4321');
+const canonicalURL = canonical
+  ? new URL(canonical, site).href
+  : new URL(Astro.url.pathname, site).href;
+
+const ogImageURL = ogImage
+  ? new URL(ogImage, site).href
+  : new URL('/images/og/default.jpg', site).href;
+
+const fullTitle = title.includes('DiveBuddy') ? title : `${title} | DiveBuddy`;
+const robots = noindex ? 'noindex, nofollow' : 'index, follow';
+
+const jsonLd: Record<string, unknown>[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': schemaType,
+    name: fullTitle,
+    description,
+    url: canonicalURL,
+    inLanguage: 'it-IT',
+  },
+];
+
+if (schemaType === 'BlogPosting') {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: title,
+    description,
+    inLanguage: 'it-IT',
+    datePublished: publishedTime ?? new Date().toISOString(),
+    dateModified: modifiedTime ?? publishedTime ?? new Date().toISOString(),
+    author: {
+      '@type': 'Organization',
+      name: author,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'DiveBuddy',
+      logo: {
+        '@type': 'ImageObject',
+        url: new URL('/favicon.svg', site).href,
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': canonicalURL,
+    },
+    image: [ogImageURL],
+  });
+}
+
+if (breadcrumbs.length > 0) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: breadcrumbs.map((crumb, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: crumb.text,
+      item: crumb.href ? new URL(crumb.href, site).href : canonicalURL,
+    })),
+  });
+}
+---
+
+<title>{fullTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalURL} />
+<meta name="robots" content={robots} />
+
+<meta property="og:type" content={type} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalURL} />
+<meta property="og:image" content={ogImageURL} />
+<meta property="og:locale" content="it_IT" />
+<meta property="og:site_name" content="DiveBuddy" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageURL} />
+
+{publishedTime && <meta property="article:published_time" content={publishedTime} />}
+{modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+{author && <meta property="article:author" content={author} />}
+
+{jsonLd.map((item) => (
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(item).replace(/</g, '\\u003c')}
+  />
+))}

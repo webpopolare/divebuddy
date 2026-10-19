@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+import { getPublishedResources, formatDate } from '../../lib/content';
+
+const resources = await getPublishedResources();
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Risorse' },
+];
+---
+
+<BaseLayout
+  title="Risorse subacquee | DiveBuddy"
+  description="Checklist, guide rapide e risorse pratiche per subacquee consapevoli."
+  breadcrumbs={breadcrumbs}
+>
+  <section class="container page-header">
+    <h1>Risorse</h1>
+    <p class="lead">
+      Strumenti pratici da usare prima, durante e dopo l’immersione.
+    </p>
+  </section>
+
+  <section class="container section">
+    {resources.length > 0 ? (
+      <div class="grid">
+        {resources.map((resource) => (
+          <Card
+            title={resource.data.title}
+            description={resource.data.description}
+            href={`/risorsa/${resource.data.slug}/`}
+            meta={resource.data.publishDate ? formatDate(resource.data.publishDate) : resource.data.type}
+          />
+        ))}
+      </div>
+    ) : (
+      <p>Non ci sono ancora risorse pubblicate.</p>
+    )}
+  </section>
+</BaseLayout>

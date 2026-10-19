@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+import { getPublishedArticles, formatDate } from '../lib/content';
+
+const hubs = (await getCollection('hubs')).sort(
+  (a, b) => a.data.order - b.data.order
+);
+
+const articles = await getPublishedArticles();
+const featured = articles.filter((article) => article.data.featured).slice(0, 3);
+const latest = articles.slice(0, 6);
+---
+
+<BaseLayout
+  title="DiveBuddy — Il tuo buddy nel blu"
+  description="Informazione subacquea con voce femminile: sicurezza, tecnica, attrezzatura, viaggi e crescita, dall’allieva all’istruttrice."
+  schemaType="WebPage"
+>
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">DiveBuddy</p>
+      <h1>Il tuo buddy nel blu.</h1>
+      <p class="lead">
+        Informazione subacquea con voce femminile: sicurezza, tecnica, attrezzatura,
+        viaggi e crescita, dall’allieva all’istruttrice.
+      </p>
+
+      <div class="hero-actions">
+        <a href="/hub/" class="btn">Esplora le hub</a>
+        <a href="/blog/" class="btn btn-secondary">Leggi il blog</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section">
+    <h2>Percorsi principali</h2>
+    <div class="grid">
+      {hubs.map((hub) => (
+        <Card
+          title={hub.data.title}
+          description={hub.data.description}
+          href={`/hub/${hub.data.slug}/`}
+        />
+      ))}
+    </div>
+  </section>
+
+  {featured.length > 0 && (
+    <section class="container section">
+      <h2>In evidenza</h2>
+      <div class="grid">
+        {featured.map((article) => (
+          <Card
+            title={article.data.title}
+            description={article.data.description}
+            href={`/blog/${article.data.slug}/`}
+            meta={formatDate(article.data.publishDate)}
+            tags={article.data.tags}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {latest.length > 0 && (
+    <section class="container section">
+      <h2>Ultimi articoli</h2>
+      <div class="grid">
+        {latest.map((article) => (
+          <Card
+            title={article.data.title}
+            description={article.data.description}
+            href={`/blog/${article.data.slug}/`}
+            meta={formatDate(article.data.publishDate)}
+            tags={article.data.tags}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="newsletter-cta container">
+    <h2>Ricevi i prossimi respiri sott’acqua</h2>
+    <p>Consigli, storie e risorse per subacquee consapevoli.</p>
+    <a href="/newsletter/" class="btn">Iscriviti alla newsletter</a>
+  </section>
+</BaseLayout>

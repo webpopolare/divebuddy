@@ -1,0 +1,29 @@
+---
+import SeriesLayout from '../../layouts/SeriesLayout.astro';
+import { getCollection } from 'astro:content';
+import { isPublishedArticle } from '../../lib/content';
+
+export async function getStaticPaths() {
+  const series = await getCollection('series');
+
+  return series.map((item) => ({
+    params: { slug: item.data.slug },
+    props: { series: item },
+  }));
+}
+
+const { series } = Astro.props;
+
+const articles = (await getCollection('articles'))
+  .filter(
+    (article) =>
+      article.data.series === series.data.slug &&
+      isPublishedArticle(article)
+  )
+  .sort(
+    (a, b) =>
+      a.data.publishDate.valueOf() - b.data.publishDate.valueOf()
+  );
+---
+
+<SeriesLayout entry={series} articles={articles} />

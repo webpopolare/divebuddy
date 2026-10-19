@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Newsletter' },
+];
+---
+
+<BaseLayout
+  title="Newsletter | DiveBuddy"
+  description="Iscriviti alla newsletter di DiveBuddy per ricevere consigli, storie e risorse subacquee con voce femminile."
+  breadcrumbs={breadcrumbs}
+>
+  <section class="container page-header">
+    <h1>Newsletter</h1>
+    <p class="lead">
+      Ricevi consigli, storie e respiri sott’acqua.
+    </p>
+  </section>
+
+  <section class="container prose">
+    <form
+      class="newsletter-form"
+      action="https://formspree.io/f/YOUR_FORM_ID"
+      method="POST"
+    >
+      <label for="email">Il tuo indirizzo email</label>
+      <input type="email" id="email" name="email" required placeholder="nome@esempio.it" />
+      <button type="submit" class="btn">Iscriviti</button>
+    </form>
+
+    <p class="small">
+      Sostituisci <code>YOUR_FORM_ID</code> con il tuo endpoint Formspree, Buttondown,
+      MailerLite, ConvertKit o un altro provider.
+    </p>
+  </section>
+</BaseLayout>

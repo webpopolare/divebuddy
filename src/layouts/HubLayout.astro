@@ -1,0 +1,58 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import Card from '../components/Card.astro';
+import { formatDate } from '../lib/content';
+
+interface Props {
+  entry: CollectionEntry<'hubs'>;
+  articles: CollectionEntry<'articles'>[];
+}
+
+const { entry, articles } = Astro.props;
+const { Content } = await entry.render();
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Hub', href: '/hub/' },
+  { text: entry.data.title },
+];
+---
+
+<BaseLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  breadcrumbs={breadcrumbs}
+  schemaType="WebPage"
+>
+  <section class="hub-hero container">
+    <Breadcrumbs items={breadcrumbs} />
+    <h1>{entry.data.title}</h1>
+    <p class="lead">{entry.data.intro}</p>
+  </section>
+
+  <div class="container prose">
+    <Content />
+  </div>
+
+  <section class="container hub-articles">
+    <h2>Articoli in questa hub</h2>
+
+    {articles.length > 0 ? (
+      <div class="grid">
+        {articles.map((article) => (
+          <Card
+            title={article.data.title}
+            description={article.data.description}
+            href={`/blog/${article.data.slug}/`}
+            meta={formatDate(article.data.publishDate)}
+            tags={article.data.tags}
+          />
+        ))}
+      </div>
+    ) : (
+      <p>Non ci sono ancora articoli pubblicati in questa hub.</p>
+    )}
+  </section>
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Card from '../../components/Card.astro';
+import { getPublishedArticles, formatDate } from '../../lib/content';
+
+const articles = await getPublishedArticles();
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Blog' },
+];
+---
+
+<BaseLayout
+  title="Blog subacqueo | DiveBuddy"
+  description="Articoli DiveBuddy su subacquea, sicurezza, tecnica, attrezzatura, viaggi e crescita femminile nel diving."
+  breadcrumbs={breadcrumbs}
+>
+  <section class="container page-header">
+    <h1>Blog</h1>
+    <p class="lead">
+      Tutti gli articoli pubblicati, in ordine cronologico inverso.
+    </p>
+  </section>
+
+  <section class="container section">
+    {articles.length > 0 ? (
+      <div class="grid">
+        {articles.map((article) => (
+          <Card
+            title={article.data.title}
+            description={article.data.description}
+            href={`/blog/${article.data.slug}/`}
+            meta={formatDate(article.data.publishDate)}
+            tags={article.data.tags}
+          />
+        ))}
+      </div>
+    ) : (
+      <p>Non ci sono ancora articoli pubblicati.</p>
+    )}
+  </section>
+</BaseLayout>
