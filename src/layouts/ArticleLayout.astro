@@ -92,6 +92,16 @@ const breadcrumbs = [
       />
     </header>
 
+    <figure class="article-cover">
+      <img
+        src={entry.data.ogImage ?? '/images/og/default.jpg'}
+        alt={entry.data.title}
+        loading="eager"
+        decoding="async"
+        onerror="this.onerror=null;this.src='/images/og/default.jpg';"
+      />
+    </figure>
+
     <div class="article-grid">
       {entry.data.showToc && (
         <aside class="article-aside">
