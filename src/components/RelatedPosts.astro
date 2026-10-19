@@ -21,6 +21,7 @@ const { articles } = Astro.props;
           href={`/blog/${article.data.slug}/`}
           meta={formatDate(article.data.publishDate)}
           tags={article.data.tags}
+          image={article.data.ogImage}
         />
       ))}
     </div>
