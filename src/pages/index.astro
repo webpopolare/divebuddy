@@ -51,13 +51,14 @@ const latest = articles.slice(0, 6);
     <section class="container section">
       <h2>In evidenza</h2>
       <div class="grid">
-        {featured.map((article) => (
+                {featured.map((article) => (
           <Card
             title={article.data.title}
             description={article.data.description}
             href={`/blog/${article.data.slug}/`}
             meta={formatDate(article.data.publishDate)}
             tags={article.data.tags}
+            image={article.data.ogImage}
           />
         ))}
       </div>
@@ -68,13 +69,14 @@ const latest = articles.slice(0, 6);
     <section class="container section">
       <h2>Ultimi articoli</h2>
       <div class="grid">
-        {latest.map((article) => (
+                {latest.map((article) => (
           <Card
             title={article.data.title}
             description={article.data.description}
             href={`/blog/${article.data.slug}/`}
             meta={formatDate(article.data.publishDate)}
             tags={article.data.tags}
+            image={article.data.ogImage}
           />
         ))}
       </div>
