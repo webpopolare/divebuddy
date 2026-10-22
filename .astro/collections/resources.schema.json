@@ -1,0 +1,68 @@
+{
+  "$ref": "#/definitions/resources",
+  "definitions": {
+    "resources": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "checklist",
+            "guida-rapida",
+            "template",
+            "lead-magnet"
+          ],
+          "default": "checklist"
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "publishDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "relatedArticles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "slug"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

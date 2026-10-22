@@ -1,0 +1,186 @@
+{
+  "$ref": "#/definitions/articles",
+  "definitions": {
+    "articles": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "hub": {
+          "type": "string",
+          "enum": [
+            "inizia-a-immergerti",
+            "migliora-la-tua-subacquea",
+            "viaggia-in-sicurezza",
+            "insegna-con-cura",
+            "community"
+          ]
+        },
+        "clusters": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "sicurezza-gentile",
+              "attrezzatura-consapevole",
+              "respiro-e-tecnica",
+              "viaggiare-blu",
+              "donne-nel-diving",
+              "oltre-la-card",
+              "didattica",
+              "carriera-subacquea",
+              "etica-subacquea"
+            ]
+          },
+          "default": []
+        },
+        "series": {
+          "type": "string"
+        },
+        "audience": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "principiante",
+              "open-water",
+              "subacquea-in-crescita",
+              "viaggiatrice-subacquea",
+              "aspirante-istruttrice",
+              "istruttrice-junior",
+              "istruttrice-esperta"
+            ]
+          },
+          "default": []
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "published",
+            "draft",
+            "merged",
+            "archive"
+          ],
+          "default": "published"
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "P1",
+            "P2",
+            "P3"
+          ],
+          "default": "P3"
+        },
+        "tone": {
+          "type": "string",
+          "default": "ispirazionale"
+        },
+        "voice": {
+          "type": "string",
+          "default": "femminile"
+        },
+        "language": {
+          "type": "string",
+          "default": "it-IT"
+        },
+        "publishDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "updatedDate": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time"
+            },
+            {
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "type": "integer",
+              "format": "unix-time"
+            }
+          ]
+        },
+        "author": {
+          "type": "string",
+          "default": "DiveBuddy"
+        },
+        "canonical": {
+          "type": "string"
+        },
+        "ogImage": {
+          "type": "string"
+        },
+        "cta": {
+          "type": "string"
+        },
+        "related": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "featured": {
+          "type": "boolean",
+          "default": false
+        },
+        "showToc": {
+          "type": "boolean",
+          "default": true
+        },
+        "showKeyTakeaways": {
+          "type": "boolean",
+          "default": true
+        },
+        "showNewsletter": {
+          "type": "boolean",
+          "default": true
+        },
+        "showComments": {
+          "type": "boolean",
+          "default": true
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "slug",
+        "hub",
+        "publishDate"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

@@ -1,0 +1,40 @@
+{
+  "$ref": "#/definitions/series",
+  "definitions": {
+    "series": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "string"
+        },
+        "intro": {
+          "type": "string"
+        },
+        "order": {
+          "type": "number"
+        },
+        "hub": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "slug",
+        "intro",
+        "order"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
